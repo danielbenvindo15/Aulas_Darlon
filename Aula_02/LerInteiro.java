@@ -12,7 +12,7 @@ public class LerInteiro{
         
         //Entrada
         System.out.println("Digite um valor inteiro:");
-        valor = teclado.nextInt();
+        valor = teclado.nextInt();//lê um valor inteiro do teclado
         
         //Processamento
         return valor;
