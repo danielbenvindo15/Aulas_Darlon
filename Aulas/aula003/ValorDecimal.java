@@ -10,7 +10,7 @@ public class ValorDecimal {
 
         numero = valordigitado();
 
-        System.out.printl(%.2f);
+        System.out.printf("%.2f", numero);
     }
 
     public static double valordigitado() {
