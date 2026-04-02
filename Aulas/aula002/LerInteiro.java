@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class LerInteiro{
 
     //declara o teclado como o scanner
-    public static Scanner teclado = new Scanner(System.in);
+    public static Scanner teclado = new Scanner(System.in); //define o teclado como entrada (scanner)
 
     public static int lerInteiro(){
         //Variáveis
@@ -12,7 +12,7 @@ public class LerInteiro{
         
         //Entrada
         System.out.println("Digite um valor inteiro:");
-        valor = teclado.nextInt();
+        valor = teclado.nextInt();//lê um valor inteiro do teclado
         
         //Processamento
         return valor;
