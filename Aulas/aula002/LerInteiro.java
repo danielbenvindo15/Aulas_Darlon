@@ -1,3 +1,4 @@
+
 //declara o scanner / importa o scanner
 import java.util.Scanner;
 
