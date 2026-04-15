@@ -31,7 +31,7 @@ public class Estacao {
             System.out.println("A estação atual é Inverno.");
         }
         else {
-            System.out.println("A estação atual é Primavéra.");
+            System.out.println("A estação atual é Primavera.");
         }
     }
 }
