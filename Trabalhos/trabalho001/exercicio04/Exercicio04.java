@@ -6,6 +6,7 @@ public class Exercicio04 {
     public static void main(String[] args) {
         //Variáveis
         int dinheiro;
+        int valor;
         int notas100 = 0;
         int notas50 = 0;
         int notas10 = 0;
@@ -15,6 +16,8 @@ public class Exercicio04 {
         dinheiro = entrada.nextInt();
 
         //Processamento
+        valor = dinheiro;
+
         notas100 = dinheiro / 100;
         dinheiro -= (notas100 * 100);
 
@@ -27,7 +30,7 @@ public class Exercicio04 {
         notas5 = dinheiro / 5;
         dinheiro -= (notas5 * 5);
         
-        if (dinheiro < 1 || dinheiro > 600) {
+        if (valor < 1 || valor > 600) {
             System.out.println("Não pode sacar");
         }
         else {
