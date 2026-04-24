@@ -126,6 +126,7 @@ public class PorExtenso {
                             dezenaString = "deze";
                             break;
                     }
+                    break;
 
                 case 2:
                     dezenaString = "vinte ";
@@ -165,54 +166,88 @@ public class PorExtenso {
 
             switch (unidade) {
                 case 1:
-                    unidadeString = "um.";
+                    unidadeString = "um";
                     break;
 
                 case 2:
-                    unidadeString = "dois.";
+                    unidadeString = "dois";
                     break;
 
                 case 3:
-                    unidadeString = "três.";
+                    unidadeString = "três";
                     break;
 
                 case 4:
-                    unidadeString = "quatro.";
+                    unidadeString = "quatro";
                     break;
 
                 case 5:
-                    unidadeString = "cinco.";
+                    unidadeString = "cinco";
                     break;
 
                 case 6:
-                    unidadeString = "seis.";
+                    unidadeString = "seis";
                     break;
 
                 case 7:
-                    unidadeString = "sete.";
+                    unidadeString = "sete";
                     break;
 
                 case 8:
-                    unidadeString = "oito.";
+                    unidadeString = "oito";
                     break;
 
                 case 9:
-                    unidadeString = "nove.";
+                    unidadeString = "nove";
                     break;
 
                 default:
                     break;
             }
 
-            if (dezena == 1) {
-                System.out.println(centenaString);
-                if (condition) {
-                    System.out.println( + dezenaString + unidadeString);
+            if (dezena == 1 || unidade == 0 || dezena == 0) {
+                
+                if (centena == 0 && dezena == 0 && unidade == 0) {
+                    System.out.println("zero.");
+                }
+                else {
+                    switch (centena) {
+                    
+                    case 0:
+                        System.out.println(dezenaString + unidadeString);
+                        break;
+
+                    default:
+                        
+                        if (dezena == 0 && unidade == 0) {
+                            System.out.println(centenaString);
+                        }
+                        else {
+                            System.out.println(centenaString + "e " + dezenaString + unidadeString);
+                        }
+                        break;
+                    }
                 }
 
+                
             }
             else {
-                System.out.println(centenaString + "e " + dezenaString + "e " + unidadeString);
+                switch (centena) {
+                    
+                    case 0:
+                        System.out.println(dezenaString + "e " + unidadeString);
+                        break;
+
+                    default:
+                        
+                        if (dezena == 0 && unidade == 0) {
+                            System.out.println(centenaString);
+                        }
+                        else {
+                            System.out.println(centenaString + "e " + dezenaString + "e " + unidadeString);
+                        }
+                        break;
+                }
 
             }
 
