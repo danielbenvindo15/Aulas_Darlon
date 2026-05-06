@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Fatorial {
+public class SomaPares {
     public static Scanner entrada = new Scanner(System.in);
 
     public static int lerInteiro() {
@@ -13,20 +13,17 @@ public class Fatorial {
     }
 
     public static void main(String[] args) {
-        int valor = lerInteiro();
-        int valorInicial = valor;
-        int i = 1;
-        int fatorial = 1;
+        int i;
+        int numero = lerInteiro();
+        int somaPares = 0;
         
 
-        
-        while (i < valor) {
-            fatorial = (fatorial + 1) * fatorial;
-
-            i++;
-
+        for (i = 1; i <= numero; i++) {
+            if (i % 2 == 0) {
+                somaPares += i;
+            }
         }
 
-        System.out.println(fatorial);
+        System.out.println(somaPares);
     }
 }
