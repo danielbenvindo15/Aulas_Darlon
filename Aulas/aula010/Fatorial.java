@@ -14,16 +14,15 @@ public class Fatorial {
 
     public static void main(String[] args) {
         int valor = lerInteiro();
-        int valorInicial = valor;
-        int i = 1;
-        int fatorial = 1;
+        int i = valor - 1;
+        int fatorial = valor;
         
 
         
-        while (i < valor) {
-            fatorial = (fatorial + 1) * fatorial;
-
-            i++;
+        while (i >= 1) {
+            fatorial *= i;
+            
+            i--;
 
         }
 
