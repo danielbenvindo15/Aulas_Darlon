@@ -23,7 +23,6 @@ public class Main {
         
     }
 
-    //Alteração teste
     public static void exercicio11(){
         int P = 2;
         int Q = 3;
